@@ -1,0 +1,11 @@
+{
+  "name": "progress",
+  "version": "0.0.1",
+  "description": "progress",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "yangyang",
+  "license": "ISC"
+}

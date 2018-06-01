@@ -1,0 +1,370 @@
+.lineNo{
+  width: 100%;
+  background: #E1E8EE;
+  height: 4px;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.lineSpan{
+  display: inline-block;
+  height: 4px;
+  vertical-align:text-top;
+}
+.lineOk{
+  display: inline-block;
+  background: #7DC855;
+  height: 4px;
+  z-index: 999;
+  vertical-align:text-top;
+}
+.lineOn{
+  display: inline-block;
+  background: #FBBC37;
+  height: 4px;
+  z-index: 999;
+  vertical-align:text-top;
+}
+.lineWait{
+  display: inline-block;
+  height: 4px;
+  background: #E1E8EE;
+  z-index: 999;
+  vertical-align:text-top;
+}
+
+.remarkOk{
+  background: #7DC855;
+  display: inline-block;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.remarkOn{
+  background: #FBBC37;
+  display: inline-block;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.remarkWait{
+  background: #E1E8EE;
+  display: inline-block;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+
+@-webkit-keyframes widthGrow {
+  from {width: 0}
+  to{width: 100%}
+}
+
+@keyframes widthGrow {
+  from {width: 0}
+  to{width: 100%}
+}
+
+
+.widthGrow0{
+  animation:widthGrow 0.5s;
+  -moz-animation: widthGrow 0.5s;	/* Firefox */
+  -webkit-animation: widthGrow 0.5s;	/* Safari 和 Chrome */
+  -o-animation: widthGrow 0.5s;
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+  /*-webkit-animation-delay: 0.2s;*/
+  /*-moz-animation-delay: 0.2s;*/
+  /*-o-animation-delay: 0.2s;*/
+  /*animation-delay: 0.2s;*/
+}
+
+.widthGrow1{
+  animation:widthGrow 0.5s;
+  -moz-animation: widthGrow 0.5s;	/* Firefox */
+  -webkit-animation: widthGrow 0.5s;	/* Safari 和 Chrome */
+  -o-animation: widthGrow 0.5s;
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.widthGrow2{
+  animation:widthGrow 0.5s;
+  -moz-animation: widthGrow 0.5s;	/* Firefox */
+  -webkit-animation: widthGrow 0.5s;	/* Safari 和 Chrome */
+  -o-animation: widthGrow 0.5s;
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.widthGrow3{
+  animation:widthGrow 0.5s;
+  -moz-animation: widthGrow 0.5s;	/* Firefox */
+  -webkit-animation: widthGrow 0.5s;	/* Safari 和 Chrome */
+  -o-animation: widthGrow 0.5s;
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.widthGrow4{
+  animation:widthGrow 0.5s;
+  -moz-animation: widthGrow 0.5s;	/* Firefox */
+  -webkit-animation: widthGrow 0.5s;	/* Safari 和 Chrome */
+  -o-animation: widthGrow 0.5s;
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.widthGrow4{
+  animation:widthGrow 0.5s;
+  -moz-animation: widthGrow 0.5s;	/* Firefox */
+  -webkit-animation: widthGrow 0.5s;	/* Safari 和 Chrome */
+  -o-animation: widthGrow 0.5s;
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  -o-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+@-webkit-keyframes remarkAnimation {
+  from {opacity: 0}
+  to{opacity: 1}
+}
+
+@keyframes remarkAnimation {
+  from {opacity: 0}
+  to{opacity: 1}
+}
+
+.remarkGrow0{
+  animation:remarkAnimation 0.5s;
+  -moz-animation: remarkAnimation 0.5s;	/* Firefox */
+  -webkit-animation: remarkAnimation 0.5s;	/* Safari 和 Chrome */
+  -o-animation: remarkAnimation 0.5s;
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.remarkGrow1{
+  animation:remarkAnimation 0.5s;
+  -moz-animation: remarkAnimation 0.5s;	/* Firefox */
+  -webkit-animation: remarkAnimation 0.5s;	/* Safari 和 Chrome */
+  -o-animation: remarkAnimation 0.5s;
+
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.remarkGrow2{
+  animation:remarkAnimation 0.5s;
+  -moz-animation: remarkAnimation 0.5s;	/* Firefox */
+  -webkit-animation: remarkAnimation 0.5s;	/* Safari 和 Chrome */
+  -o-animation: remarkAnimation 0.5s;
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.remarkGrow3{
+  animation:remarkAnimation 0.5s;
+  -moz-animation: remarkAnimation 0.5s;	/* Firefox */
+  -webkit-animation: remarkAnimation 0.5s;	/* Safari 和 Chrome */
+  -o-animation: remarkAnimation 0.5s;
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.remarkGrow4{
+  animation:remarkAnimation 0.5s;
+  -moz-animation: remarkAnimation 0.5s;	/* Firefox */
+  -webkit-animation: remarkAnimation 0.5s;	/* Safari 和 Chrome */
+  -o-animation: remarkAnimation 0.5s;
+
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  -o-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.remarkGrow5{
+  animation:remarkAnimation 0.5s;
+  -moz-animation: remarkAnimation 0.5s;	/* Firefox */
+  -webkit-animation: remarkAnimation 0.5s;	/* Safari 和 Chrome */
+  -o-animation: remarkAnimation 0.5s;
+
+
+  animation-fill-mode: forwards ;
+  -webkit-animation-fill-mode: forwards ;
+  -moz-animation-fill-mode: forwards ;
+  -o-animation-fill-mode: forwards ;
+
+  animation-timing-function:linear;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  -o-animation-timing-function:linear;
+
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.progressName{
+  color: #666666;
+  vertical-align:text-top;
+}
+
+.remarkOutOut{
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-bottom;
+  opacity: 0;
+  margin-bottom: 3px;
+}
+.triangleDown {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid  #7DC855;
+  display: inline-block;
+  vertical-align: text-top;
+}
