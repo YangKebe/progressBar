@@ -6,10 +6,18 @@ class Progress extends React.PureComponent{
   constructor(props){
     super(props);
     //status: 1:绿色   2:黄色  3:灰色
-    // this.progressArray=[{name:'步骤一',status:1,remark:'步骤一'},{name:'步骤二',status:1,remark:'步骤二'},{name:'步骤三',status:2,remark:'步骤三'},{name:'步骤四',status:3,remark:'步骤四'},{name:'步骤五',status:3,remark:'步骤五'},{name:'步骤六',status:3,remark:'步骤六'}];
+    // this.progressArray=[
+    //   {name:'步骤一',status:1,remark:'步骤一',click:null},
+    //   {name:'步骤二',status:1,remark:'步骤二',click:null},
+    //   {name:'步骤三',status:2,remark:'步骤三',click:null},
+    //   {name:'步骤四',status:3,remark:'步骤四',click:null},
+    //   {name:'步骤五',status:3,remark:'步骤五',click:null},
+    //   {name:'步骤六',status:3,remark:'步骤六',click:null}
+    //   ];
     this.progressArray=this.props.data ? this.props.data:[];
     this.fontSize=this.props.fontSize?this.props.fontSize:12;
   }
+
 
   loadProcess=()=>{
     let progress=[];
@@ -65,7 +73,7 @@ class Progress extends React.PureComponent{
             <div style={{display:'inline-block',textAlign:'right',width:1/(this.progressArray.length-1)*100+"%"}}>
               <div className={styles.remarkOutOut +" " + styles['remarkGrow'+index] } style={{marginRight:(0-(item.name.length*this.fontSize+16)/2)+"px"}}>
 
-                <div style={{fontSize:this.fontSize+"px"}} className={item.status==1?styles.remarkOk : item.status==2? styles.remarkOn :styles.remarkWait}>{item.remark}</div>
+                <div style={{fontSize:this.fontSize+"px"}} className={item.status==1?styles.remarkOk : item.status==2? styles.remarkOn :styles.remarkWait} onClick={item.click}>{item.remark}</div>
 
                 <div style={{height:'10px'}}>
                   <span className={styles.triangleDown} style={{borderTopColor:item.status==1?'#7DC855' : item.status==2? '#FBBC37':'#E1E8EE'}}/>
