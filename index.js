@@ -7,9 +7,9 @@ class Progress extends React.PureComponent{
     super(props);
     //status: 1:绿色   2:黄色  3:灰色
     // this.progressArray=[
-    //   {name:'步骤一',status:1,remark:'步骤一',click:null},
-    //   {name:'步骤二',status:1,remark:'步骤二',click:null},
-    //   {name:'步骤三',status:2,remark:'步骤三',click:null},
+    //   {name:'步骤一',status:2,remark:'步骤一',click:null},
+    //   {name:'步骤二',status:3,remark:'步骤二',click:null},
+    //   {name:'步骤三',status:3,remark:'步骤三',click:null},
     //   {name:'步骤四',status:3,remark:'步骤四',click:null},
     //   {name:'步骤五',status:3,remark:'步骤五',click:null},
     //   {name:'步骤六',status:3,remark:'步骤六',click:null}
@@ -67,14 +67,25 @@ class Progress extends React.PureComponent{
     let progress=[];
     this.progressArray.map((item,index)=>{
 
+      if(index==0){
+        if(item.status !=this.progressArray[index+1].status){
+          progress.push(
+            <div className={styles.remarkOutOut +" " + styles['remarkGrow'+index] } style={{position:'absolute',left:(0-(item.name.length*this.fontSize+16)/2)+"px"}}>
+              <div style={{fontSize:this.fontSize+"px"}} className={item.status==1?styles.remarkOk : item.status==2? styles.remarkOn :styles.remarkWait} onClick={item.click}>{item.remark}</div>
+              <div style={{height:'10px'}}>
+                <span className={styles.triangleDown} style={{borderTopColor:item.status==1?'#7DC855' : item.status==2? '#FBBC37':'#E1E8EE'}}/>
+              </div>
+            </div>
+          )
+        }
+      }
+
       if(index!=0 && index !=this.progressArray.length-1){
         if(item.status !=this.progressArray[index+1].status){
           progress.push(
             <div style={{display:'inline-block',textAlign:'right',width:1/(this.progressArray.length-1)*100+"%"}}>
               <div className={styles.remarkOutOut +" " + styles['remarkGrow'+index] } style={{marginRight:(0-(item.name.length*this.fontSize+16)/2)+"px"}}>
-
                 <div style={{fontSize:this.fontSize+"px"}} className={item.status==1?styles.remarkOk : item.status==2? styles.remarkOn :styles.remarkWait} onClick={item.click}>{item.remark}</div>
-
                 <div style={{height:'10px'}}>
                   <span className={styles.triangleDown} style={{borderTopColor:item.status==1?'#7DC855' : item.status==2? '#FBBC37':'#E1E8EE'}}/>
                 </div>
@@ -83,7 +94,27 @@ class Progress extends React.PureComponent{
           )
         }else{
           progress.push(
-          <div style={{display:'inline-block',textAlign:'right',width:1/(this.progressArray.length-1)*100+"%"}} />
+            <div style={{display:'inline-block',textAlign:'right',width:1/(this.progressArray.length-1)*100+"%",visibility:'hidden'}}>
+              <div className={styles.remarkOutOut +" " + styles['remarkGrow'+index] } style={{marginRight:(0-(item.name.length*this.fontSize+16)/2)+"px"}}>
+                <div style={{fontSize:this.fontSize+"px"}} className={item.status==1?styles.remarkOk : item.status==2? styles.remarkOn :styles.remarkWait} onClick={item.click}>{item.remark}</div>
+                <div style={{height:'10px'}}>
+                  <span className={styles.triangleDown} style={{borderTopColor:item.status==1?'#7DC855' : item.status==2? '#FBBC37':'#E1E8EE'}}/>
+                </div>
+              </div>
+            </div>
+          )
+        }
+      }else if(index ==this.progressArray.length-1){
+        if(item.status==2){
+          progress.push(
+            <div style={{display:'inline-block',textAlign:'right',width:1/(this.progressArray.length-1)*100+"%"}}>
+              <div className={styles.remarkOutOut +" " + styles['remarkGrow'+index] } style={{marginRight:(0-(item.name.length*this.fontSize+16)/2)+"px"}}>
+                <div style={{fontSize:this.fontSize+"px"}} className={item.status==1?styles.remarkOk : item.status==2? styles.remarkOn :styles.remarkWait} onClick={item.click}>{item.remark}</div>
+                <div style={{height:'10px'}}>
+                  <span className={styles.triangleDown} style={{borderTopColor:item.status==1?'#7DC855' : item.status==2? '#FBBC37':'#E1E8EE'}}/>
+                </div>
+              </div>
+            </div>
           )
         }
       }

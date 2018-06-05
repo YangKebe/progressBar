@@ -1,6 +1,6 @@
 {
   "name": "progress",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "progress",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/YangKebe/progressBar/issues"
   },
-  "homepage": "https://github.com/YangKebe/progressBar#readme"
+  "homepage": "https://github.com/YangKebe/progressBar#readme",
+  "keywords": [
+    "progress",
+    "进度条"
+  ]
 }
